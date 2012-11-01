@@ -1,0 +1,77 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Halim">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en] (WinNT; I) [Netscape]">
+   <title>Introducion</title>
+</head>
+<body text="#000000" bgcolor="#C5BDEA" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<blockquote>
+<center><font face="Arial,Helvetica"><font size=+2>Modifying the system
+state</font></font>
+<br>
+<hr WIDTH="100%"></center>
+
+<p><font size=+1>Virgo simulates a simple machine (called <a href="../introduction/What is P86.html">P86</a>)
+and shows you how your code modifies the state of that machine. Ideally,
+the only way to change the state of that machine is through the instructions
+in your code. However, to help you experiment with the computer machine,
+and get the feel of how it behaves, Virgo allows you to manually change
+the state of the machine (eg. registers, flags, memory)</font>
+<p><font size=+1>Virgo only allows you to modify things while your program
+is idle. That is, you can't manually change anything while your program
+your running. If you want to, <a href="breakpoints/Managing breakpoints.html">set
+a breakpoint</a> (or press pause at the right split second), modify as
+needed, then run again.</font>
+<p><font size=+1>If you end up modifying the state too much!, you can always
+press the reset button in the <a href="interface/The main window.html">main
+window</a>. This will reload your instructions and reset the system to
+its initial state.</font>
+<br>&nbsp;
+<h2>
+<font size=+1>Modifying registers:</font></h2>
+
+<blockquote><font size=+1>In the <a href="interface/Registers and ports window.html">registers
+and ports window</a>, every register is represented by a button that carries
+its value. Press on a button to change the value of a specific register.
+The new value has to be a valid hexadecimal word (4 hex digits) or else
+the new entry won't be accepted. If you try to change the value of IP,
+the new value has to correspond to the starting address of some instruction
+of your code, otherwise it will be considered invalid. Note that changing
+the FLAGS register might automatically change the system flags as well.</font></blockquote>
+
+<h2>
+<font size=+1>Modifying flags:</font></h2>
+
+<blockquote><font size=+1>In the <a href="interface/Registers and ports window.html">registers
+and ports window</a>, flags are represented by check boxes. If a flag is
+checked, it means that it is <i>set</i>, i.e equal to one. click on any
+flag to <i>set</i>/<i>reset</i> its state. Note that modifying a flag will
+automatically change the value of the FLAGS register.</font></blockquote>
+
+<h2>
+<font size=+1>Modifying ports:</font></h2>
+
+<blockquote><font size=+1>Virgo does not allow you to modify the values
+of ports manually, mainly because ports are not persistent containers.
+That is, unlike memory cells, ports are not there to hold information,
+but to interact with the devices connected to the computer system. The
+only way to read/write a port is using the IN/OUT instructions respectively.</font></blockquote>
+
+<h2>
+<font size=+1>Modifying memory cells:</font></h2>
+
+<blockquote><font size=+1>In the <a href="interface/Memory window.html">memory
+window</a>, every memory location is represented as a separate cell. Double
+click on any cell to change its value. The new value has to be a valid
+hexadecimal byte or else it won't be accepted. You can't change the value
+of a word (2 bytes) at once. To do that, change the value of every byte
+separately (little endian!). Also note that if you modify the part of memory
+that contains your byte code, I can <font color="#FF0000">GUARANTEE</font>
+you that your code won't work any more!</font></blockquote>
+</blockquote>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+
+<toc version="1.0">
+
+ <tocitem text="Table of contents">
+  
+  <tocitem text="Introduction" target="Introduction">
+	<tocitem text="What is a debugger?" target="What is a debugger?"/>
+	<tocitem text="What is Virgo?" target="What is Virgo?"/>
+  	<tocitem text="What is P86?" target="What is P86?"/>
+  	<tocitem text="What language does Virgo read?" target="What language does Virgo read?"/>
+  </tocitem>
+
+  <tocitem text="Using Virgo">
+    <tocitem text="Loading your OBJ file" target="Loading your OBJ file"/>
+    <tocitem text="Debugging your program" target="Debugging your program"/>
+    <tocitem text="Modifying the system state" target="Modifying the system state"/>
+    <tocitem text="Watches">
+	<tocitem text="What is a watch?" target="What is a watch"/>
+    	<tocitem text="Managing watches" target="Managing watches"/>
+    </tocitem>
+    <tocitem text="Breakpoints">
+	<tocitem text="What is a breakpoint?" target="What is a breakpoint"/>
+	<tocitem text="Managing breakpoints" target="Managing breakpoints"/>
+    </tocitem>
+    <tocitem text="Virgo windows" target="Virgo windows">
+		<tocitem text="The main window" target="The main window"/>
+		<tocitem text="Reigsters and ports window" target="Registers and ports window"/>
+		<tocitem text="Code window" target="Code window"/>
+		<tocitem text="Watches window" target="Watches window"/>
+		<tocitem text="Breakpoints window" target="Breakpoints window"/>
+		<tocitem text="Memory window" target="Memory window"/>
+    </tocitem>
+    <tocitem text="Error messages" target="Error messages"/>
+  </tocitem>
+
+
+  <tocitem text="About P86" target="About P86">
+    <tocitem text="Processor" target="Processor"/>
+    <tocitem text="Memory" target="Memory"/>
+    <tocitem text="Ports" target="Ports" />
+    <tocitem text="Devices" target="Devices">
+		<tocitem text="Screen" target="Screen"/>
+		<tocitem text="Timer" target="Timer"/>
+		<tocitem text="Keyboard" target="Keyboard"/>
+    </tocitem>
+  </tocitem>
+
+  <tocitem text="About assembly" target="About assembly">
+    <tocitem text="The ASM file" target="The ASM file"/>
+    <tocitem text="The assembler" target="The assembler"/>
+    <tocitem text="The OBJ file" target="The OBJ file"/>
+    <tocitem text="The assembly instruction set" target="The assembly instruction set"/>
+  </tocitem>
+
+ </tocitem>
+</toc>
+
+

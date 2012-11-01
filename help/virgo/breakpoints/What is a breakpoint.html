@@ -1,0 +1,88 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Halim">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en] (WinNT; I) [Netscape]">
+   <title>Introducion</title>
+</head>
+<body text="#000000" bgcolor="#C5BDEA" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<blockquote>
+<center><font face="Arial,Helvetica"><font size=+2>What is a breakpoint?</font></font>
+<br>
+<hr WIDTH="100%"></center>
+
+<p><font size=+1>A breakpoint is a condition that, when evaluates to true,
+causes the debugger to stop executing your code. This results in the sequential
+flow of your instructions being broken. Hence the name breakpoint.</font>
+<p><font size=+1>Breakpoints are very useful when you need to find out
+<font color="#000000">WHEN</font>
+a specific event occurs.</font>
+<p><font size=+1>For example, let's say that you need to know if a specific
+region of code causes AX to contain the value zero. What you do is you
+set a breakpoint at the end of that code block, and another breakpoint
+that fires when AX is equal to zero. Now you can run your code and see
+if the latter breakpoint occurs before the first.</font>
+<br>&nbsp;
+<h1>
+<font size=+2>Types of breakpoints</font></h1>
+<font size=+1>Virgo allows for a wide range of breakpoint conditions:</font>
+<br>&nbsp;
+<blockquote>
+<h2>
+<a NAME="code"></a><font size=+1>Code breakpoints</font></h2>
+<font size=+1>break when a certain instruction is reached. you can manage
+that kind of breakpoints from the <a href="../interface/Breakpoints window.html">breakpoints
+window</a>, or simply by clicking on the checkbox beside the desired instruction
+in the <a href="../interface/Code window.html">code window</a>.</font></blockquote>
+
+<blockquote>
+<h2>
+<a NAME="memory"></a><font size=+1>Memory breakpoints</font></h2>
+<font size=+1>break when a specific memory byte or word is:</font>
+<blockquote>
+<li>
+<font size=+1>modified</font></li>
+
+<li>
+<font size=+1>equal to a value</font></li>
+
+<li>
+<font size=+1>less than a value</font></li>
+
+<li>
+<font size=+1>greater than a value</font></li>
+
+<li>
+<font size=+1>less than or equal to a value</font></li>
+
+<li>
+<font size=+1>greater than or equal to a value</font></li>
+
+<li>
+<font size=+1>not equal to a value</font></li>
+</blockquote>
+<font size=+1>(Note that all comparisons are based on signed 2's complement
+interpertation)</font></blockquote>
+
+<blockquote>
+<h2>
+<a NAME="port"></a><font size=+1>Port breakpoints</font></h2>
+<font size=+1>The same features as above, applied to 8-bit and 16-bit ports.</font>
+<h2>
+<a NAME="register"></a><font size=+1>Register breakpoints</font></h2>
+<font size=+1>The same features as above, applied to all 16-bit registers.</font></blockquote>
+
+<p><br><font size=+1>The <a href="../interface/Breakpoints window.html">breakpoints
+window</a> is a separate window that shows you the list of current breakpoints
+and allows you to modify that list.</font>
+<p><font size=+1>Follow this link for details about <a href="Managing breakpoints.html">managing
+breakpoints</a>.</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+</body>
+</html>

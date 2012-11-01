@@ -1,0 +1,76 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Halim">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en] (WinNT; I) [Netscape]">
+   <title>Introducion</title>
+</head>
+<body text="#000000" bgcolor="#C5BDEA" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<blockquote>
+<center><font face="Arial,Helvetica"><font size=+2>Debugging your program</font></font>
+<br>
+<hr WIDTH="100%"></center>
+
+<p><font size=+1>Virgo provides multiple running modes that help you debug
+your program, ranging from executing one instruction at a time, to running
+the whole program at once.</font>
+<p><a NAME="singleStep"></a><img SRC="../images/singlestep.gif" NOSAVE height=20 width=20><font size=+1>
+Single step:</font>
+<blockquote><font size=+1>Executes a single assembly instruction (<a href="#The current instruction">the
+current instruction</a>) and immediately modifies the state of the machine.
+This mode is useful when you have pin-pointed the troublesome spot in your
+code and want to take a closer look.</font></blockquote>
+<a NAME="stepOver"></a><img SRC="../images/stepover.gif" NOSAVE height=20 width=20><font size=+1>
+Step over:</font>
+<blockquote><font size=+1>Behaves exactly like single step. Except that
+if <a href="#The current instruction">the current instruction</a> is a
+CALL or INT, the whole subroutine that is called is executed. This mode
+is useful if you're single stepping and you come across a CALL that you
+know is not the cause of any problems (eg. CALL displayText or INT 4).</font></blockquote>
+<a NAME="run"></a><img SRC="../images/play.gif" NOSAVE height=20 width=18><font size=+1>
+Run (or play):</font>
+<blockquote><font size=+1>Sequentially executes the instructions in your
+code, starting at <a href="#The current instruction">the current instruction</a>.
+Running will stop when any of the following happens:</font>
+<ul>
+<li>
+<font size=+1>The end of code is reached (HLT instruction)</font></li>
+
+<li>
+<font size=+1>A <a href="breakpoints/What is a breakpoint.html">breakpoint</a>
+is reached</font></li>
+
+<li>
+<font size=+1>An invalid instruction is reached</font></li>
+
+<li>
+<font size=+1>IP is set to a value that is not the start of an instruction</font></li>
+</ul>
+</blockquote>
+<a NAME="runUntilCursor"></a><img SRC="../images/untilcursor.gif" NOSAVE height=20 width=20><font size=+1>
+Run until selected code line:</font>
+<blockquote><font size=+1>Behaves exactly like <a href="#run">run</a>,
+except that execution will also stop when the currently selected code line
+is reached. You can think of this mode as a Run with a temporary breakpoint.</font></blockquote>
+<a NAME="runUntilCall"></a><img SRC="../images/untilcall.gif" NOSAVE height=20 width=20><font size=+1>
+Run until CALL:</font>
+<blockquote><font size=+1>Behaves exactly like <a href="#run">run</a>,
+except that execution will also stop when the first CALL instruction is
+reached.</font></blockquote>
+<font size=+1>To make debugging even more efficient. Make use of Virgo's
+<a href="breakpoints/What is a breakpoint.html">breakpoints</a>
+and <a href="watches/What is a watch.html">watches</a>.</font>
+<br>&nbsp;
+<br>&nbsp;
+<p><a NAME="The current instruction"></a><img SRC="../images/tip.gif" NOSAVE height=11 width=11><font size=+1>
+Note:</font>
+<blockquote><font size=+1><font color="#FF0000">The current instruction</font>
+is the instruction that IP currently points to. In the code window, you
+will find this instruction highlighted in red. To change the current instruction,
+you can change the value of IP in the registers and ports window.</font></blockquote>
+</blockquote>
+
+</body>
+</html>

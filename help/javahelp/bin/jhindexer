@@ -1,0 +1,14 @@
+#! /bin/ksh -p
+# @(#)jhindexer 1.18 01/29/99
+#
+# This builds an index
+#
+# "jhindex" is probably a better name
+#
+PRG=`whence $0` >/dev/null 2>&1
+JHHOME=`/usr/bin/dirname $PRG`/../..
+progname=`/usr/bin/basename $0`
+
+P=${JHHOME}/javahelp/lib/jhall.jar:${JHHOME}/swing/swingall.jar
+
+${JHHOME}/javahelp/bin/jhwrap "$P" com.sun.java.help.search.Indexer $@

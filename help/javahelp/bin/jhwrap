@@ -1,0 +1,27 @@
+#! /bin/ksh
+#
+# @(#)jhwrap 1.2 07/14/98
+#
+# Indirection point for using 1.1 or 1.2 commands
+# This version alwasys uses "java" from PATH
+#
+# First argument is CLASSPATH to use
+# Second argument is ClassName
+# Third optional argument is -jdk; if present it is just ignored
+# Remaining arguments are passed to the invocation
+
+PRG=`whence $0` >/dev/null 2>&1
+JHHOME=`/usr/bin/dirname $PRG`/../..
+progname=`/usr/bin/basename $0`
+
+KLASSPATH=$1:${CLASSPATH}
+shift
+KLASS=$1
+shift
+
+export CLASSPATH; CLASSPATH=$KLASSPATH ;
+if [[ $1 == -jdk ]] ; then
+  shift ;
+fi
+
+java $KLASS $@ ;

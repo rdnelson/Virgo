@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/map_1_0.dtd">
+
+<map version="1.0">
+
+	
+	<mapID target="Introduction" url="introduction/introduction.html" />
+      <mapID target="What is a debugger?" url="introduction/What is a debugger.html"/>
+	<mapID target="What is Virgo?" url="introduction/What is Virgo.html" />
+	<mapID target="What is P86?" url="introduction/What is p86.html" />
+	<mapID target="What language does Virgo read?" url="introduction/What language does Virgo read.html" />
+
+	<mapID target="Loading your OBJ file" url="virgo/Loading your OBJ file.html" />
+	<mapID target="Debugging your program" url="virgo/Debugging your program.html" />
+	<mapID target="Modifying the system state" url="virgo/Modifying the system state.html" />
+	<mapID target="What is a watch" url="virgo/watches/What is a watch.html" />
+	<mapID target="Managing watches" url="virgo/watches/Managing watches.html" />
+	<mapID target="What is a breakpoint" url="virgo/breakpoints/What is a breakpoint.html" />
+	<mapID target="Managing breakpoints" url="virgo/breakpoints/Managing breakpoints.html" />
+	<mapID target="Virgo windows" url="virgo/interface/Virgo windows.html" />
+	<mapID target="The main window" url="virgo/interface/The main window.html" />
+	<mapID target="Registers and ports window" url="virgo/interface/Registers and ports window.html" />
+	<mapID target="Code window" url="virgo/interface/Code window.html" />
+	<mapID target="Watches window" url="virgo/interface/Watches window.html" />
+	<mapID target="Breakpoints window" url="virgo/interface/Breakpoints window.html" />
+	<mapID target="Memory window" url="virgo/interface/Memory window.html" />
+	<mapID target="Error messages" url="virgo/Error messages.html" />
+
+
+	<mapID target="About P86" url="p86/About P86.html" />
+	<mapID target="Processor" url="p86/Processor.html" />
+	<mapID target="Memory" url="p86/Memory.html" />
+	<mapID target="Ports" url="p86/Ports.html" />
+	<mapID target="Devices" url="p86/devices/Devices.html" />
+	<mapID target="Screen" url="p86/devices/Screen.html" />
+	<mapID target="Timer" url="p86/devices/Timer.html" />
+	<mapID target="Keyboard" url="p86/devices/Keyboard.html" />
+
+	<mapID target="About assembly" url="assembly/About assembly.html" />
+	<mapID target="The ASM file" url="assembly/The ASM file.html" />
+	<mapID target="The assembler" url="assembly/The assembler.html" />
+	<mapID target="The OBJ file" url="assembly/The OBJ file.html" />
+	<mapID target="The assembly instruction set" url="assembly/The assembly instruction set.html" />
+
+	
+	
+</map>

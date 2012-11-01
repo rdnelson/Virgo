@@ -1,0 +1,157 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Halim">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en] (WinNT; I) [Netscape]">
+   <title>Introducion</title>
+</head>
+<body text="#000000" bgcolor="#C5BDEA" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<blockquote>
+<center><font face="Arial,Helvetica"><font size=+2>The main window</font></font>
+<br>
+<hr WIDTH="100%">
+<br><img SRC="../../images/main window.GIF" NOSAVE height=349 width=223></center>
+<font size=+1>The main window is the window that first appears when you
+start Virgo. It contains all the features you need to manage OBJ files,
+run and debug your program, and enable/disable other Virgo windows. The
+main window contains the following components:</font>
+<ul>
+<li>
+<font size=+1><a href="#menuBar">Menu bar</a></font></li>
+
+<li>
+<font size=+1><a href="#toolbar">Tool bar</a></font></li>
+
+<li>
+<font size=+1><a href="#screen">Simulated screen</a></font></li>
+</ul>
+</blockquote>
+
+<hr WIDTH="100%">
+<blockquote>
+<h1>
+<a NAME="menuBar"></a><font size=+1>The menu bar</font></h1>
+
+<blockquote>
+<h4>
+<a NAME="fileMenu"></a><font size=+1>File menu</font></h4>
+
+<blockquote><a NAME="openItem"></a><font size=+1>Open</font>
+<blockquote><font size=+1>Opens an OBJ file and loads its contents into
+Virgo. see <a href="../Loading your OBJ file.html">Loading your OBJ file</a>.</font></blockquote>
+<a NAME="exitItem"></a><font size=+1>Exit</font>
+<blockquote><font size=+1>Exits Virgo.</font></blockquote>
+</blockquote>
+
+<h4>
+<a NAME="runMenu"></a><font size=+1>Run menu</font></h4>
+
+<blockquote><a NAME="resetItem"></a><img SRC="../../images/reset.gif" NOSAVE BORDER=0 height=20 width=20><font size=+1>
+Reset</font>
+<blockquote><font size=+1>Resets your program; resets the state of the
+P86 machine, reloads your code/variables into memory, and moves IP back
+to the start of your code.</font></blockquote>
+<a NAME="playItem"></a><img SRC="../../images/play.gif" NOSAVE height=20 width=18><font size=+1>
+Play</font>
+<blockquote><font size=+1>Runs your code sequentially from the current
+instruction till the end of code.</font>
+<br><font size=+1><a href="../Debugging your program.html#run">More details</a></font></blockquote>
+<a NAME="singleStepItem"></a><img SRC="../../images/singlestep.gif" NOSAVE height=20 width=20><font size=+1>
+Single step</font>
+<blockquote><font size=+1>Executes a single instruction of your code (the
+currently instruction)</font>
+<br><font size=+1><a href="../Debugging your program.html#singleStep">More
+details</a></font></blockquote>
+<a NAME="stepOverItem"></a><img SRC="../../images/stepOver.gif" NOSAVE height=20 width=20><font size=+1>
+Step over</font>
+<blockquote><font size=+1>Behaves exactly like single step, except that
+when a CALL or INT is encountered, the whole subrouting block is executed.</font>
+<br><font size=+1><a href="../Debugging your program.html#stepOver">More
+details</a></font></blockquote>
+<a NAME="runUntilCallItem"></a><img SRC="../../images/untilCall.gif" NOSAVE height=20 width=20><font size=+1>
+Run until call</font>
+<blockquote><font size=+1>Runs your code sequentially from the current
+instruction until the first CALL instruction is&nbsp; reached.</font>
+<br><font size=+1><a href="../Debugging your program.html#runUntilCall">More
+details</a></font></blockquote>
+<a NAME="runUntilCursorItem"></a><img SRC="../../images/untilCursor.gif" NOSAVE height=20 width=20><font size=+1>
+Run until selected line</font>
+<blockquote><font size=+1>Runs your code sequentially from the current
+instruction until reaching the line that is currnently selected in the
+<a href="Code window.html">code
+window</a>.</font>
+<br><font size=+1><a href="../Debugging your program.html#runUntilCursor">More
+details</a></font></blockquote>
+</blockquote>
+
+<h4>
+<a NAME="windowsMenu"></a><font size=+1>Windows menu</font></h4>
+
+<blockquote><a NAME="instructionsCheckbox"></a><font size=+1>Instructions
+checkbox</font>
+<blockquote><font size=+1>Sets the <a href="Code window.html">code window</a>
+visible/invisible.</font></blockquote>
+<a NAME="registersAndPortsCheckbox"></a><font size=+1>Registers and ports
+checkbox</font>
+<blockquote><font size=+1>Sets the <a href="Registers and ports window.html">registers
+and ports window</a> visible/invisible.</font></blockquote>
+<a NAME="watchesCheckbox"></a><font size=+1>Watches checkbox</font>
+<blockquote><font size=+1>Sets the <a href="Watches window.html">watches
+window</a> visible/invisible.</font></blockquote>
+<a NAME="breakpointsCheckbox"></a><font size=+1>Breakpoints checkbox</font>
+<blockquote><font size=+1>Sets the <a href="Breakpoints window.html">breakpoints
+window</a> visible/invisible.</font></blockquote>
+<a NAME="closeAllItem"></a><font size=+1>Close all</font>
+<blockquote><font size=+1>Closes all auxiliary windows, keeping only the
+main window visible.</font></blockquote>
+<a NAME="arrangeNeatlyItem"></a><font size=+1>Arrange neatly</font>
+<blockquote><font size=+1>Arranges all windows so that they are all visible
+and fit neatly on your screen.</font></blockquote>
+<a NAME="memoryWindowEnabledCheckbox"></a><font size=+1>Memory window enabled
+checkbox</font>
+<blockquote><font size=+1>Creates a <a href="Memory window.html">memory
+window,</a> where you can see the contents of every memory cell in <a href="../../introduction/What is P86.html">P86</a>.
+This option is very useful but if you set it on, the performance of virgo
+will go down noticeably. Whether you want this option on or not depends
+on how powerful the machine that runs Virgo is.</font></blockquote>
+</blockquote>
+
+<h4>
+<a NAME="helpMenu"></a><font size=+1>Help menu</font></h4>
+
+<blockquote><font size=+1>Since you're reading this text I guess you know
+how to use the help menu!</font></blockquote>
+</blockquote>
+</blockquote>
+
+<hr WIDTH="100%">
+<blockquote>
+<h1>
+<a NAME="toolbar"></a><font size=+1>The tool bar:</font></h1>
+
+<blockquote><font size=+1>A picture is worth a thousand words. See the
+<a href="#runMenu">Run
+menu</a> for even more words.</font></blockquote>
+
+<center><img SRC="../../images/toolbar.gif" NOSAVE height=251 width=319></center>
+</blockquote>
+
+<hr WIDTH="100%">
+<blockquote>
+<h1>
+<a NAME="screen"></a><font size=+1>The simulated screen:</font></h1>
+
+<blockquote><font size=+1>The black area below the tool bar is a simulation
+of a <a href="../../p86/devices/Screen.html">P86 screen</a>. You can't
+interact with this area directly. The only way to interact with the simulated
+screen is through your instructions (IN/OUT). The white rectangle represents
+the cursor on the P86 screen.</font></blockquote>
+
+<h1>
+</h1>
+</blockquote>
+
+</body>
+</html>

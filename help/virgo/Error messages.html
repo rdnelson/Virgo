@@ -1,0 +1,99 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Halim">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en] (WinNT; I) [Netscape]">
+   <title>Introducion</title>
+</head>
+<body text="#000000" bgcolor="#C5BDEA" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<blockquote>
+<center><font face="Arial,Helvetica"><font size=+2>Error messages</font></font>
+<br>
+<hr WIDTH="100%"></center>
+
+<p><font size=+1>Here is a list of the error messages that Virgo might
+decide to shoot at you for one reason or another. The messages are arranged
+by the task you were trying to perform when they occured. Every message
+has its explanation beside it, along with some suggestions about what might
+be the problem:</font>
+<h1>
+
+<hr WIDTH="100%"></h1>
+
+<h1>
+<font size=+1>When opening OBJ files:</font></h1>
+<u><font size=+1><i>filename</i> does not exist or is unreachable</font></u>
+<blockquote><font size=+1>The file you wanted to open was not found. Either
+you typed the name of a file that does not exist (check for spelling errors),
+or you do not have read access to the file that you specified (consult
+network administrator).</font></blockquote>
+<u><font size=+1><i>filename</i> is corrupted</font></u>
+<blockquote><font size=+1>The file that you tried to open in not a valid
+OBJ file. It contains bad data inside it. Try re-assembling your original
+ASM file.</font></blockquote>
+
+<hr WIDTH="100%">
+<h1>
+<font size=+1>When debugging your program:</font></h1>
+<u><font size=+1>End of code is already reached</font></u>
+<blockquote><font size=+1>The last time you executed the program, a HLT
+instruction was reached. This is the end of the program and you can't run
+your code any further! If you want to run your code from the start again,
+press <i>Reset</i> in the <a href="interface/The main window.html">main
+window</a>.</font></blockquote>
+
+<p><br><u><font size=+1>Instruction set IP to a location that is not the
+start of an instruction</font></u>
+<blockquote><font size=+1>After executing an instruction, IP ended up pointing
+to a location that does not correspond to the start of any insturction
+in your code. This means something went wrong for sure! I suggest you look
+for the following pitfalls:</font>
+<ul>
+<li>
+<font size=+1>You ended your code but forgot to add a HLT instruction at
+the end</font></li>
+
+<li>
+<font size=+1>Your PUSH/POP pairs do not match (especially during subroutine
+CALLs)</font></li>
+
+<li>
+<font size=+1>You did not set up the vector table CORRECTLY prior to calling
+a software interrupt (using INT)</font></li>
+</ul>
+</blockquote>
+<u><font size=+1>The first byte in the instruction does not confirm to
+any known instruction</font></u>
+<br><font size=+1>or</font>
+<br><u><font size=+1>Bad REG field ....</font></u>
+<br><font size=+1>or</font>
+<br><u><font size=+1>Instruction contains an invalid address mode</font></u>
+<blockquote><font size=+1>One of the instructions does not follow the standard
+instruction-encoding format. Chances are, in some previous instructions
+you have modified some memory locations that contain your code. Make sure
+that all instructions that modify memory modify the RIGHT locations.</font></blockquote>
+
+<hr WIDTH="100%">
+<h1>
+<font size=+1>When modifying the system state:</font></h1>
+<u><font size=+1><i>x</i> is not a hexadecimal byte/word!</font></u>
+<blockquote><font size=+1>You are trying to modify a register or a memory
+cell, but the new value you enter is not valid. A register must contain
+a valid HEXADECIMAL word. A memory address must contain a valid HEXADECIMAL
+byte. If you don't understand the meaning of those sentences, ask your
+instructor.</font></blockquote>
+<u><font size=+1>New IP does not point to the start of an instruction!</font></u>
+<blockquote><font size=+1>You are trying to modify register IP. This register
+contains the memory address of the next instruction to be executed. The
+new value that you want IP to contain does not confirm to the start of
+any instruction in memory. Look at the table in the <a href="interface/Code window.html">code
+window</a> to see the start address of every instruction in your code.</font></blockquote>
+
+<br>&nbsp;
+<blockquote>&nbsp;</blockquote>
+</blockquote>
+
+</body>
+</html>
